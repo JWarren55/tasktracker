@@ -30,7 +30,19 @@ void main() {
         System.out.println("2. " + status2 + " " + task2);
     }
 }
+
 public static void addTask(String taskName, String dueDate) {
     tasks.add(new Task(taskName));
     System.out.println("Added task: " + taskName + " (due " + dueDate + ")");
+}
+
+public static void countTasks() {
+    int total = tasks.size();
+    int done = 0;
+    for (Task t : tasks) {
+        if (t.done) {
+            done++;
+        }
+    }
+    System.out.println(done + "/" + total + " tasks complete");
 }
