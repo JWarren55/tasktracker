@@ -5,7 +5,7 @@
 This project is for a GitHub class taken Fall 2026.
 
 ## Features
-- Assign a due date to each task
+- Assign a priority to each task
 - item 2
 - item 3
 
