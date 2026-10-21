@@ -47,3 +47,10 @@ public static void countTasks() {
     System.out.println(done + "/" + total + " tasks complete");
 }
 
+<<<<<<< HEAD
+=======
+public static void addTask(String taskName, String priority) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (priority: " + priority + ")");
+}
+>>>>>>> 121fc6f (Add priority to task)
