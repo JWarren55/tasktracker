@@ -47,3 +47,20 @@ public static void countTasks() {
     System.out.println(done + "/" + total + " tasks complete");
 }
 
+<<<<<<< HEAD
+=======
+public static void addTask(String taskName, String dueDate, String priority) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (due " + dueDate + ", priority: " + priority + ")");
+}
+
+public static void listTasks() {
+    ArrayList<Task> sorted = new ArrayList<>(tasks);
+    sorted.sort((a, b) -> Boolean.compare(a.done, b.done));
+    for (int i = 0; i < sorted.size(); i++) {
+        Task t = sorted.get(i);
+        String status = t.done ? "x" : " ";
+        System.out.println((i + 1) + ". [" + status + "] " + t.name);
+    }
+}
+>>>>>>> b0c83c9 (Update Main.java)
