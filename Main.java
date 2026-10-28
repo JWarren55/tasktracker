@@ -30,3 +30,11 @@ void main() {
         System.out.println("2. " + status2 + " " + task2);
     }
 }
+
+public static void listTasks() {
+    for (int i = 0; i < tasks.size(); i++) {
+        Task t = tasks.get(i);
+        String status = t.done ? "X" : " ";
+        System.out.println((i + 1) + ". [" + status + "] " + t.name);
+    }
+}
