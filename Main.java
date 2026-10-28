@@ -30,6 +30,7 @@ void main() {
         System.out.println("2. " + status2 + " " + task2);
     }
 }
+<<<<<<< HEAD
 
 public static void listTasks() {
     for (int i = 0; i < tasks.size(); i++) {
@@ -37,4 +38,9 @@ public static void listTasks() {
         String status = t.done ? "X" : " ";
         System.out.println((i + 1) + ". [" + status + "] " + t.name);
     }
+=======
+public static void addTask(String taskName, String dueDate) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (due " + dueDate + ")");
+>>>>>>> 30612445be606702cc0bdb15cc6a8cf759d048c7
 }
